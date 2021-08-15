@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Osho</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sacramento&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
-    <div class="main-container">
-      <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-      <h1>I'm Osho.</h1>
-      <h2>Let's <span id="code">code</span>!</h2>
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-      <img src="images/mountain.png" alt="mountain-img">
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title>Osho</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sacramento&display=swap"
+    rel="stylesheet">
 
-    <div class="middle-container">
-      <div class="profile">
-        <img class="face" src="https://thispersondoesnotexist.com/image" alt="random-non-existing-person">
-        <p>Welcome ☕</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>Skills</h2>
-        <div class="skill-row">
-          <img class="IT-sec" src="images/hacker.png" alt="hacker-pic">
-          <h3>IT-security</h3>
-          <p>Information, IT, system, cyber security.</p>
-        </div>
-        <div class="skill-row">
-          <img class="webdev" src="images/data-management.png" alt="webdev-pic">
-          <h3>Web dev & Programming</h3>
-          <p>Html, css, JavaScript, Node, React, SQL, Python, Java.</p>
-        </div>
-        <div class="skill-row">
-          <img class="law" src="images/law-book.png" alt="legal-pic">
-          <h3>Lawyer</h3>
-          <p>Expertise and interests: IT law, Business law, Pulic law.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-      </div>
-    </div>
+</head>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://github.com/osho81">GitHub</a>
-      <p>© 2021 Osho.</p>
+<body>
+  <div class="navbar-section ">
+    <ul class="navbar">
+      <li><a href="#home-sec">Home</a></li>
+      <li><a href="#skill-sec">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="main-container" id="home-sec">
+    <!-- <h2>Welcome<span id="welcome-title">!</span> ☕</h2> -->
+    <img class="cloud" src="images/clouds.png" alt="cloud-img">
+    <h1>I'm Osho</h1>
+    <img class="origami-bird" src="images/origami.png" alt="cloud-img">
+    <img class="face" src="https://thispersondoesnotexist.com/image" alt="random-non-existing-person">
+    <p id="face-text">Random AI person from 
+      <a target="_blank" href="https://thispersondoesnotexist.com">here...</a></p>
+  </div>
+
+  <div class="middle-container" id="skill-sec">
+    <hr class="hr-top">
+    <div class="skills">
+      <h2>Skills & Interests</h2>
+      <div class="skill-row">
+        <img class="webdev" src="images/data-management.png" alt="webdev-pic">
+        <h3>Web dev & Programming</h3>
+        <p>Html/css, jvaScript, React, Node, SQL, MongoDB, Python, Java.</p>
+      </div>
+      <div class="skill-row IT-sec-skill">
+        <img class="IT-sec" src="images/hacker.png" alt="hacker-pic">
+        <h3 class="itsec-title">IT-security</h3>
+        <p class="itsec-title">Information/system security, cloud protection.</p>
+      </div>
+      <div class="skill-row">
+        <img class="law" src="images/law-book.png" alt="legal-pic">
+        <h3>Legal</h3>
+        <p>Pulic law, IT law, Information security, Data protection.</p>
+      </div>
     </div>
-  </body>
+    <hr class="hr-bottom">
+  </div>
+
+  <div class="bottom-container" id="contact">
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+    </div>
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/osho81">GitHub</a>
+    <p class="copyright">© 2021 Osho</p>
+  </div>
+</body>
+
 </html>

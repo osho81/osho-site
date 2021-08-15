@@ -5,10 +5,32 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.navbar-section {
+  background-color: #e1eded;
+  opacity: 0.8;
+}
+
+.navbar {
+  align-items: center;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0 30px;
+  padding: 10px;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 5px 30px;
+}
+
 h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: #66BFBF;
-  margin-top: 50px auto 0 auto;
   font-family: 'Sacramento', serif;
 }
 
@@ -25,10 +47,6 @@ h3 {
   font-family: 'Merriweather', serif;
 }
 
-a {
-  color: #11999E;
-}
-
 p {
   font-family: 'Merriweather', serif;
   font-weight: bold;
@@ -36,85 +54,101 @@ p {
   line-height: 2;
 }
 
-hr {
-  border: dotted #C8C8C8 8px;
-  border-bottom: none;
-  width: 10%;
-  margin: 100px auto;
-}
-
 .main-container {
   background-color: #e1eded;
   position: relative;
-  padding-top: 100px;
+  padding: 120px;
 }
 
-.top-cloud {
+#welcome-title {
+  font-weight: bold;
+}
+
+.face {
+  /* position: relative; */
+  margin: 50px auto 5px;
+  width: 12%;
+  border-radius: 50%;
+}
+
+#face-text {
+  opacity: 0.6;
+  font-size: 0.6em;
+  color: #11999E;
+}
+
+.cloud {
   position: absolute;
-  right: 300px;
+  right: 200px;
   top: 40px;
+  opacity: 0.6;
 }
 
-.bottom-cloud {
+.origami-bird {
   position: absolute;
-  left: 250px;
-  bottom: 300px;
+  left: 200px;
+  bottom: 150px;
+  opacity: 0.3;
+}
+
+.hr-top {
+  border: dotted #e1eded 10px;
+  border-bottom: none;
+  margin: 70px auto 70px;
+  width: 15%;
+  opacity: 0.7;
+}
+
+.hr-bottom {
+  border: dotted #e1eded 10px;
+  border-bottom: none;
+  width: 15%;
+  margin: 70px auto 70px;
 }
 
 .middle-container {
   position: relative;
-  margin: 75px auto 75px auto;
-}
-
-.profile {
-  margin: auto auto 50px auto;
-  line-height: 2;
+  margin: 0 auto 10px;
 }
 
 .skill-row {
-  margin: 75px auto 100px auto;
+  margin: 100px auto 100px auto;
   width: 50%;
   text-align: left;
   line-height: 2;
 }
 
-.face, .IT-sec, .webdev, .law {
+.IT-sec, .webdev, .law {
   width: 15%;
 }
 
-.face {
-  border-radius: 50%;
+.webdev {
+  float: left;
+  margin-right: 30px;
 }
 
-.webdev {
+.IT-sec {
   float: right;
   margin-left: 30px;
 }
 
-.IT-sec, .law {
+.itsec-title {
+  padding-left: 130px;
+}
+
+.law {
   float: left;
   margin-right: 30px;
 }
 
 .btn {
-   background: #11999E;
-   background-image: -webkit-linear-gradient(top, #11999E, #109195);
-   background-image: -moz-linear-gradient(top, #11999E, #109195);
-   background-image: -ms-linear-gradient(top, #11999E, #109195);
-   background-image: -o-linear-gradient(top, #11999E, #109195);
-   background-image: -webkit-gradient(to bottom, #11999E, #109195);
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
+   background: #53c5c9;
    border-radius: 5px;
    color: #FFFFFF;
    font-family: Arial;
    font-size: 16px;
    font-weight: 600;
    padding: 10px;
-   -webkit-box-shadow: 1px 1px 20px 0 #000000;
-   -moz-box-shadow: 1px 1px 20px 0 #000000;
-   box-shadow: 1px 1px 20px 0 #000000;
-   text-shadow: 1px 1px 20px #000000;
    border: solid #337FED 0;
    text-decoration: none;
    display: inline-block;
@@ -125,22 +159,40 @@ hr {
 .btn:hover {
    border: solid #29CFD5 0;
    background: #0C9499;
-   background-image: -webkit-linear-gradient(top, #0C9499, #0CCBD1);
-   background-image: -moz-linear-gradient(top, #0C9499, #0CCBD1);
-   background-image: -ms-linear-gradient(top, #0C9499, #0CCBD1);
-   background-image: -o-linear-gradient(top, #0C9499, #0CCBD1);
-   background-image: -webkit-gradient(to bottom, #0C9499, #0CCBD1);
    -webkit-border-radius: 15px;
    -moz-border-radius: 15px;
-   border-radius: 15px;
+   border-radius: 10px;
    text-decoration: none;
 }
 
 .bottom-container {
   position: relative;
-  margin: 75px auto 75px auto;
+  padding: 20px 0 20px;
+  background-color: #e1eded;
 }
 
-#code {
-  font-weight: bold;
+.contact-me {
+  margin: 30px auto;
 }
+
+.footer-link {
+  margin: 30px 20px;
+}
+
+a {
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  color: #11999E;
+}
+
+a:hover {
+  color: white;
+  font-size: 105%;
+}
+
+.copyright {
+  color: #506d6d;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
