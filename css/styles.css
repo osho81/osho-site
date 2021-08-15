@@ -25,6 +25,7 @@ li {
 
 li a {
   display: block;
+  font-weight: bold;
   padding: 5px 30px;
 }
 
