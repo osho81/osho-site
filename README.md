@@ -12,4 +12,4 @@ Main purpose is to learn basics of html and css, without involving any other too
 - Github pages for deployment of website
 
 ##### TODO
-- Add updated contact details
+- Update contact details
